@@ -14,7 +14,7 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  networking.hostName = "nixos"; # Define your hostname.
+  networking.hostName = "catnux"; # Define your hostname.
   networking.nameservers = [
     "1.1.1.1"
     "1.0.0.1"

@@ -6,6 +6,11 @@
   home.username = "r3z";
   home.homeDirectory = "/home/r3z";
 
+  imports = [
+    ./modules/kitty.nix
+    ./modules/git.nix
+  ];
+
   # This value determines the Home Manager release that your configuration is
   # compatible with. This helps avoid breakage when a new Home Manager release
   # introduces backwards incompatible changes.
@@ -21,6 +26,7 @@
   home.packages = with pkgs; [
     vscode
   ];
+
 
   # Home Manager is pretty good at managing dotfiles. The primary way to manage
   # plain files is through 'home.file'.
