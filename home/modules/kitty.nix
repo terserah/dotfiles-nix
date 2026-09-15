@@ -4,11 +4,11 @@
 
     font = {
       name = "JetBrainsMono Nerd Font";
-      size = 10.5;
+      size = 10;
     };
 
     settings = {
-      shell = "tmux new-session -A -s main";
+      # shell = "tmux new-session -A -s main";
       # Fonts
       bold_font = "auto";
       italic_font = "auto";
