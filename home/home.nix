@@ -9,6 +9,8 @@
   imports = [
     ./modules/kitty.nix
     ./modules/git.nix
+    ./modules/tmux.nix
+    ./modules/rofi.nix
   ];
 
   # This value determines the Home Manager release that your configuration is

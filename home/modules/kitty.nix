@@ -8,7 +8,7 @@
     };
 
     settings = {
-      # shell = "tmux new-session -A -s main";
+      shell = "tmux new-session -A -s main";
       # Fonts
       bold_font = "auto";
       italic_font = "auto";
