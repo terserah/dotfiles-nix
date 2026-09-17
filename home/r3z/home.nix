@@ -1,4 +1,8 @@
-{ config, pkgs, ... }:
+{ config, inputs, pkgs, ... }:
+
+let
+  opencode = inputs.opencode.packages.${pkgs.system}.default;
+in
 
 {
   # Home Manager needs a bit of information about you and the paths it should
@@ -25,6 +29,7 @@
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages = with pkgs; [
+    opencode
     vscode
   ];
 
