@@ -14,5 +14,8 @@
     docker-compose
     vim
     wget
+    libX11
   ];
+
+  
 }

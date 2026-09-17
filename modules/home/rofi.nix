@@ -8,9 +8,9 @@ in
     enable = true;
     package = pkgs.rofi;
 
-    font = "Inter 11";
+    settings = {
+      font = "Inter 11";
 
-    extraConfig = {
       modi = "drun,run,window";
 
       show-icons = true;

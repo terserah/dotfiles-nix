@@ -15,9 +15,8 @@
       system = "x86_64-linux";
     in {
       nixosConfigurations.catnux = nixpkgs.lib.nixosSystem {
-        inherit system;
-
         modules = [
+          { nixpkgs.hostPlatform = system; }
           ./hosts/catnux/configuration.nix
 
           home-manager.nixosModules.home-manager

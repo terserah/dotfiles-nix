@@ -1,7 +1,7 @@
 { config, inputs, pkgs, ... }:
 
 let
-  opencode = inputs.opencode.packages.${pkgs.system}.default;
+  opencode = inputs.opencode.packages.${pkgs.stdenv.hostPlatform.system}.default;
 in
 
 {
@@ -16,6 +16,7 @@ in
     ../../modules/home/gtk.nix
     ../../modules/home/tmux.nix
     ../../modules/home/rofi.nix
+    ../../modules/home/session.nix
     ../../modules/home/waybar
     ../../modules/home/zsh
   ];
@@ -32,7 +33,10 @@ in
   # The home.packages option allows you to install Nix packages into your
   # environment.
   home.packages = with pkgs; [
+    android-studio
+    jetbrains.datagrip
     opencode
+    networkmanagerapplet
     nautilus
     vscode
     swaybg

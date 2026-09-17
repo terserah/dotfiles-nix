@@ -1,4 +1,4 @@
-{}:
+{ pkgs, ... }:
 {
   home.sessionVariables = {
     ANDROID_HOME = "/data/Apps/sdk/android";
