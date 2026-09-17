@@ -11,7 +11,7 @@
     distrobox
     dnsmasq
     bibata-cursors
-    podman-compose
+    docker-compose
     vim
     wget
   ];

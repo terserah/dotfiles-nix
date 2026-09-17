@@ -11,7 +11,8 @@
     ./desktop/niri.nix
     ./desktop/audio.nix
     ./desktop/fonts.nix
-    ./services/podman.nix
+    # ./services/podman.nix
+    ./services/docker.nix
     ./programs/packages.nix
     ./programs/apps.nix
     ./users/r3z.nix
