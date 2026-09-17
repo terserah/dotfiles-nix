@@ -15,6 +15,7 @@ in
     ../../modules/home/git.nix
     ../../modules/home/tmux.nix
     ../../modules/home/rofi.nix
+    ../../modules/home/waybar
   ];
 
   # This value determines the Home Manager release that your configuration is
