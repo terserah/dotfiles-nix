@@ -16,6 +16,7 @@ in
     ../../modules/home/tmux.nix
     ../../modules/home/rofi.nix
     ../../modules/home/waybar
+    ../../modules/home/zsh
   ];
 
   # This value determines the Home Manager release that your configuration is
@@ -32,6 +33,7 @@ in
   home.packages = with pkgs; [
     opencode
     vscode
+    swaybg
   ];
 
 

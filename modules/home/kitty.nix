@@ -16,7 +16,7 @@
       disable_ligatures = "never";
 
       # Window
-      background_opacity = "0.65";
+      background_opacity = "0.90";
       window_padding_width = 3;
       confirm_os_window_close = 0;
       hide_window_decorations = "yes";
