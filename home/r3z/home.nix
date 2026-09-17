@@ -7,10 +7,10 @@
   home.homeDirectory = "/home/r3z";
 
   imports = [
-    ./modules/kitty.nix
-    ./modules/git.nix
-    ./modules/tmux.nix
-    ./modules/rofi.nix
+    ../../modules/home/kitty.nix
+    ../../modules/home/git.nix
+    ../../modules/home/tmux.nix
+    ../../modules/home/rofi.nix
   ];
 
   # This value determines the Home Manager release that your configuration is
@@ -24,7 +24,6 @@
 
   # The home.packages option allows you to install Nix packages into your
   # environment.
-  nixpkgs.config.allowUnfree = true;
   home.packages = with pkgs; [
     vscode
   ];

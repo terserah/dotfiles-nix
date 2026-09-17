@@ -26,7 +26,7 @@
             home-manager.useGlobalPkgs = true;
             home-manager.useUserPackages = true;
 
-            home-manager.users.r3z = import ./home/home.nix;
+            home-manager.users.r3z = import ./home/r3z/home.nix;
           }
         ];
       };

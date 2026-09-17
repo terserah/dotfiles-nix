@@ -31,12 +31,6 @@
       options = [ "subvol=@home" "compress=zstd" "noatime" ];
     };
 
-  fileSystems."/nix" =
-    { device = "/dev/disk/by-uuid/54071867-ef1f-4b35-883e-81fbdb21f674";
-      fsType = "btrfs";
-      options = [ "subvol=@nix" "compress=zstd" "noatime" ];
-    };
-
   fileSystems."/var/log" =
     { device = "/dev/disk/by-uuid/54071867-ef1f-4b35-883e-81fbdb21f674";
       fsType = "btrfs";
@@ -44,7 +38,7 @@
     };
 
   fileSystems."/boot" =
-    { device = "/dev/disk/by-uuid/B058-72DC";
+    { device = "/dev/disk/by-uuid/B38A-39B7";
       fsType = "vfat";
       options = [ "umask=0077" ];
     };
