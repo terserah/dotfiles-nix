@@ -13,6 +13,7 @@ in
   imports = [
     ../../modules/home/kitty.nix
     ../../modules/home/git.nix
+    ../../modules/home/gtk.nix
     ../../modules/home/tmux.nix
     ../../modules/home/rofi.nix
     ../../modules/home/waybar
@@ -32,6 +33,7 @@ in
   # environment.
   home.packages = with pkgs; [
     opencode
+    nautilus
     vscode
     swaybg
   ];
